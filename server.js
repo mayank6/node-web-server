@@ -11,4 +11,4 @@ app.get('/',(req,res)=>{
 app.get('/about',(req,res)=>{
   res.render('about.hbs',{"obj":"rendered about template"})
 })
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
